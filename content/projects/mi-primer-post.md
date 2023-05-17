@@ -16,7 +16,7 @@ code:
 Texto animado como escritura en teclado en vivo
 {{< /typeit >}}
 
-{{< figure src="/cats/cat.jpg" title="michi (figure)" >}}
+{{< figure src="/cats/cat.jpg" title="michi (figure)" caption="uwu" width="200" >}}
 
 {{< youtube G6TyH-dQUV0 >}}
 
