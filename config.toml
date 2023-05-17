@@ -67,7 +67,7 @@ canonifyURLs = true
 		enable = true
 		# type of search engine ["lunr", "algolia"]
 		# 搜索引擎的类型 ["lunr", "algolia"]
-		type = "algolia"
+		type = "lunr"
 		# max index length of the chunked content
 		# 文章内容最长索引长度
 		contentLength = 4000
@@ -88,7 +88,7 @@ canonifyURLs = true
 		absoluteURL = false
 
 		[params.search.algolia]
-		  index = "/"
+		  index = ""
 		  appID = ""
 		  searchKey = ""
 
@@ -97,6 +97,17 @@ canonifyURLs = true
 		Instagram = "_miguehm"
 		Email = "miguel.hernandezmor@alumno.buap.mx"
 		Linkedin = "miguel-angel-h"
+
+    [params.page.code]
+      # whether to show the copy button of the code block
+      # 是否显示代码块的复制按钮
+      copy = true
+      # the maximum number of lines of displayed code by default
+      # 默认展开显示的代码行数
+      maxShownLines = 50
+    # KaTeX mathematical formulas config (KaTeX https://katex.org/)
+    # KaTeX 数学公式配置 (KaTeX https://katex.org/)
+
 [menu]
     [[menu.main]]
 		weight = 1
@@ -121,3 +132,6 @@ canonifyURLs = true
 		name = "Fotografía"
 		url = "/tutorials/"
 		title = "Some useful tutorials"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
